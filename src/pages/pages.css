@@ -1,0 +1,125 @@
+/* CONTACT US PAGE */
+#title{
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+#title h2{
+    text-align: center;
+    padding-top: 6rem;
+    font-size: 56px;
+}
+.contact-us-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+    width: 70%;
+    border-bottom: 1px solid #514d4d;
+}
+.contact-us-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 1rem;
+    max-width: 900px;
+    padding: 1rem 2rem;
+}
+.contact-us-details h3{
+    padding-bottom: 2rem;
+    margin: 0;
+    font-size: 1.5rem;
+    border: none;
+    width: 100%;
+}
+.hm-contact-form{
+   width: 100%;
+}
+textarea{
+    width: 95%;
+    height: 150px;
+    border: 1px solid #9b8e8e;
+    font-size: 16px;
+    margin: 10px 0;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    resize: none;
+}
+.contact-us-other-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    max-width: 40%;
+    margin-left: 3rem;
+    padding: 1rem 2rem 0;
+}
+.contact-us-other-content{
+    padding: 2rem 0;
+    border-top: 1px solid black;
+}
+.contact-us-other-content h4{
+    padding-bottom: .8rem;
+}
+.contact-us-other-content p{
+    padding-bottom: 2rem;
+}
+.contact-us-other-content a{
+    font-family: var(--font-family);
+    font-weight: 600;
+}
+.contact-us-other-content a:hover{
+    text-decoration: underline;
+    color: var(--color-link);
+}
+form .contact-submit-btn{
+    width: 5rem;
+    padding: 1rem;
+    border: 1px solid red;
+    margin: 1rem 0;
+}
+form .contact-us-questions{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    width: 90%;
+}
+form .contact-us-question-options{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+form .contact-us-question-option{
+    margin-right: 2rem;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+form .contact-us-question-option input{
+    width: 1rem;
+    border: 1px solid #181616;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+/* underline selected 
+form .contact-us-question-option input option label*/
+form .contact-us-question-option input:checked + label p{
+    border-bottom: 1px solid var(--color-link);
+    color: var(--color-link);
+    fill: var(--color-link);
+}
+form .contact-us-question-options label p{
+    margin-left: 2rem;
+    margin-top: -1.7rem;
+    font-family: serif;
+}
+form .contact-us-question-options label:hover{
+    border-bottom: 1px solid var(--color-link);
+    color: var(--color-link);
+}

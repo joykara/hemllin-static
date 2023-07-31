@@ -1,0 +1,83 @@
+.navbar{
+    /* position: relative;
+    z-index: 2; */
+    padding: 1rem 1rem 0 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(0deg, #fefffff7 10%, #11101028 98.44%);
+}
+.navbar__logo{
+    display: flex;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: left;
+    cursor: pointer;
+}
+.navbar-hm__logo{
+    height: 60px;
+    width: 60px;
+}
+.navbar-hm__logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.navbar-hm__name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+    font-family: var(--font-family);
+    font-size: 1.2rem;
+    color: var(--color-subtext);
+}
+.navbar__menu{
+    margin-right: 5%;
+}
+.navbar__menu-content{
+    position: relative;
+    display: flex;
+    flex: 2;
+    justify-content: left;
+    align-items: flex-start;
+}
+.navbar__menu-content-detail{
+    padding: 20px 0;
+    margin-right: 3rem;
+}
+.navbar__menu p,
+.navbar__menu p a,
+.navbar__menu-content-detail a{
+    font-family: 'Merriweather';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.navbar__menu-content-detail a:hover,
+.navbar__menu-content p a:hover{
+    cursor: pointer;
+    color: var(--color-link);
+    transition: 0.3s ease-in-out;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 1440px){
+    .navbar__menu p,
+    .navbar__menu p a,
+    .navbar__menu-content-detail a{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 1370px){
+    .navbar__menu{
+        margin-left: .3rem;
+    }
+}
+@media screen and (max-width: 1086px){
+    .navbar{
+        padding: 1rem 1rem 0 1rem;
+    }
+}
+

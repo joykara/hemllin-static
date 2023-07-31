@@ -1,25 +1,37 @@
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
 import './App.css';
+import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { SplashScreen } from './components';
+import Homepage from './pages/Homepage';
+import ContactUs from './pages/ContactUs';
 
-function App() {
+function AppContainer() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulating a delay for demonstration purposes
+    setLoading(loading); // Start loading
+    setTimeout(() => {
+      setLoading(false); // Stop loading after a delay
+    }, 2000);
+  }, [loading])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+      {loading ? (
+          <SplashScreen />
+        ) : (
+          <Routes>
+              <Route path="/" exact element={<Homepage />} />
+              <Route path="/contact-us" element={<ContactUs />} />
+            </Routes>
+        )}
+      </div>
+    </Router>
   );
 }
 
+function App() {
+  return <AppContainer />;
+}
 export default App;
