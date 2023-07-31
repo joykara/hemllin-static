@@ -25,7 +25,7 @@ const Navbar = () => {
       </div>
       <div className="navbar__menu">
         <ul className="navbar__menu-content">
-          <li className="navbar__menu-content-detail"><Link to='/contact-us'>Contact Us</Link></li>
+          <li className="navbar__menu-content-detail"><Link to='/'>Contact Us</Link></li>
         </ul>
       </div>
     </div>
