@@ -98,7 +98,7 @@ p{
 /** For mobile devices **/
 @media (max-width: 1080px) {
   .custom-shape-divider-bottom-1690816741 {
-    bottom: -10vh;
+    bottom: -20vh;
   }
   .custom-shape-divider-bottom-1690816741 svg {
       width: calc(130% + 1.3px);
