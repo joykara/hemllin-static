@@ -1,7 +1,7 @@
 import React from 'react';
 import './UnderConstruction.css';
 import construction from '../../assets/construction.jpeg';
-import companyProfilePDF from '../../assets/hemllin_profile.pdf';
+import companyProfilePDF from '../../assets/hemllin_custom.pdf';
 
 const UnderConstruction = () => {
   const downloadProfile = () => {
